@@ -24,7 +24,7 @@ Integration Testing
 - Test API routes to ensure they interact correctly with the database.
 - Test front-end components interact correctly with the API (e.g., form submissions, data fetching).
 
-Most end-to-end manual testing was done - allowing more team members to do it 
+Most end-to-end manual testing was done - for better bug catch and solutions allow more team members to test the features (2 more is good)
 
 Performance Testing
 - Test load capacity of the server by simulating multiple users.
