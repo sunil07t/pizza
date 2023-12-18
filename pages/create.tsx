@@ -74,6 +74,12 @@ const CreatePage = () => {
         return;
     }
 
+    if (pizza.ingredients.length <= 0 ) {
+        setIsLoading(false);
+        toast.error('Please add ingredients.');
+        return;
+    }
+
     for (let ingredient of pizza.ingredients) {
         if (!ingredient.name.trim() || isNaN(Number(ingredient.quantity)) || Number(ingredient.quantity) <= 0) {
             setIsLoading(false);
