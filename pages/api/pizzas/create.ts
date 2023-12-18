@@ -23,6 +23,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(404).json({ message: "User not found" });
     }
 
+    if (req.body.ingredients.length <= 0 ) {
+      return res.status(400).json({ errors: 'Please add ingredients.' });
+      return;
+  }
+
     await check('name').isLength({ min: 1 }).run(req);
     await check('ingredients.*.name').notEmpty().run(req);
     await check('ingredients.*.quantity').isNumeric().run(req);
