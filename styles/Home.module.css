@@ -1,0 +1,225 @@
+/* Home.module.css */
+.back {
+    background: linear-gradient(135deg, #f8cdda 0%, #1d2b64 100%);
+    padding: 20px;
+    min-height: 100vh; 
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .cardContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .savedPizzasTitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #1d2b64; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+  
+  .createButton {
+    background-color: #0070f3; 
+    color: white;
+    padding: 10px 20px;
+    margin: 60px auto;
+    display: block;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .createButton:hover {
+    background-color: #0056b3; 
+  }
+  
+  .pizzaCard {
+    background: #f0f4ff; 
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .pizzaCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pizzaName {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1d2b64;  
+    margin-bottom: 8px;
+  }
+  
+  .deleteButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff1744;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .deleteButton:hover {
+    background: #e31432;
+  }
+  
+  .popupOverlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; 
+  }
+  
+  .popupContent {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 20px; 
+    position: relative;
+    max-width: 500px; 
+    width: calc(100% - 40px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.5; 
+    text-align: left; 
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ccc;
+    color: #333;
+    padding: 8px;
+    border: none;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: 20px; 
+  }
+  
+  .closeButton:hover {
+    background: #bbb;
+  }
+  
+  .ingredientList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .ingredientItem {
+    background: #e7eaf0; 
+    margin-bottom: 10px; 
+    padding: 12px; 
+    border-radius: 10px; 
+    font-size: 16px; 
+  }
+
+  .ingredientTitle {
+    padding-top: 20px; 
+    border-radius: 10px; 
+    font-size: 16px; 
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .loadMoreButton {
+    background-color: #0070f3; 
+    color: white;
+    padding: 12px 24px; 
+    border: none;
+    border-radius: 9999px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #0056b3; 
+  }
+  
+  .deletePizzaButton {
+    background: #ff1744; 
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; 
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .deletePizzaButton:hover {
+    background: #e31432; 
+    transform: scale(1.05); 
+  }
+
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .loadingBg {
+    background-color: #000000; 
+  }
+  
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+  
+  .loadingSpinner {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spinner 1s linear infinite;
+  }
+  
+  .signInMessage {
+    text-align: center;
+    font-size: 24px;
+    color: #1d2b64;
+    background-color: #f0f4ff; 
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    max-width: 600px; 
+}
