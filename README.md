@@ -10,6 +10,7 @@ To run it locally
 After cloning the repo - run:  
 - npm i
 - npm run dev
+
 Create the env variables used in the app (or ask the author)
 
 ## Imporvements
