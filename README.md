@@ -6,7 +6,6 @@ This mini Project uses Next.js, React, Next-auth, Typescript, MongoDB. The App a
 - To list all the Pizzas that they have saved and not deleted yet
 
 ## Running Locally
-To run it locally 
 After cloning the repo - run:  
 - npm i
 - npm run dev
@@ -24,7 +23,7 @@ Integration Testing
 - Test API routes to ensure they interact correctly with the database.
 - Test front-end components interact correctly with the API (e.g., form submissions, data fetching).
 
-Most end-to-end manual testing was done - for better bug catch and solutions allow more team members to test the features (2 more is good)
+Most end-to-end manual testing was done - for better bug catch and solutions allowing more team members to test the features (2 more is good)
 
 Performance Testing
 - Test load capacity of the server by simulating multiple users.
