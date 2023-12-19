@@ -25,7 +25,7 @@ const Header = () => {
         {!isSessionLoading && (
         session && session.user ? (
           <div>
-            <span>Account - {session.user.email}</span>
+              <span className={`${styles.accountInfo}`}>Account - {session.user.email}</span>
             <button onClick={() => signOut()} className={styles.signInOutButton}>Sign out</button>
           </div>
         ) : (
