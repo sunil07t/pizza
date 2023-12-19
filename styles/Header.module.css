@@ -31,4 +31,19 @@
   .signInOutButton:hover {
     background-color: #0056b3; 
   }
+
+/* Hide account info on mobile but keep sign-in/out button */
+@media (max-width: 768px) {
+  .accountInfo { /* Apply this class to the account info span */
+    display: none;
+  }
+}
+
+/* Adjust padding for smaller screens if necessary */
+@media (max-width: 768px) {
+  .header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
   
